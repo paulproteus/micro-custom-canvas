@@ -47,3 +47,4 @@ requires = [
 requires = [
     'toga-android>=0.3.0.dev20',
 ]
+template = "../../briefcase-android-gradle-template"
