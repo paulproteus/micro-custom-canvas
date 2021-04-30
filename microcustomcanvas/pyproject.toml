@@ -1,0 +1,49 @@
+[tool.briefcase]
+project_name = "Micro Custom Canvas"
+bundle = "org.asheesh.microcustomcanvas"
+version = "0.0.1"
+url = "https://microcustomcanvas.asheesh.org/microcustomcanvas"
+license = "MIT license"
+author = 'Asheesh Laroia'
+author_email = "asheesh@asheesh.org"
+
+[tool.briefcase.app.microcustomcanvas]
+formal_name = "Micro Custom Canvas"
+description = "Just a guy with dots and lines"
+icon = "src/microcustomcanvas/resources/microcustomcanvas"
+sources = ['src/microcustomcanvas']
+requires = []
+
+
+[tool.briefcase.app.microcustomcanvas.macOS]
+requires = [
+    'toga-cocoa>=0.3.0.dev20',
+]
+
+[tool.briefcase.app.microcustomcanvas.linux]
+requires = [
+    'toga-gtk>=0.3.0.dev20',
+]
+system_requires = [
+    'libgirepository1.0-dev',
+    'libcairo2-dev',
+    'libpango1.0-dev',
+    'libwebkitgtk-3.0-0',
+    'gir1.2-webkit-3.0',
+]
+
+[tool.briefcase.app.microcustomcanvas.windows]
+requires = [
+    'toga-winforms>=0.3.0.dev20',
+]
+
+# Mobile deployments
+[tool.briefcase.app.microcustomcanvas.iOS]
+requires = [
+    'toga-iOS>=0.3.0.dev20',
+]
+
+[tool.briefcase.app.microcustomcanvas.android]
+requires = [
+    'toga-android>=0.3.0.dev20',
+]
